@@ -1,0 +1,18 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.nav-links {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.link {
+    text-decoration: none;
+}
