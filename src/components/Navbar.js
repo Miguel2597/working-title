@@ -1,12 +1,13 @@
-import { useState } from 'react'
+import { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import { IndexContext } from './IndexContext'
 import menuItems from '../routes/MenuItems'
 
 import './Navbar.css'
 
 export default function Navbar() {
 
-	const [selectedIndex, setSelectedIndex] = useState(0)
+	const { selectedIndex } = useContext(IndexContext)
 
 	return (
 		<nav className='navbar'>
@@ -14,7 +15,7 @@ export default function Navbar() {
 			<ul className='nav-links'>
 				{menuItems.map(({ title, path }, index) => 
 					<Link key={index} to={path} className='link' 
-					onClick={() => setSelectedIndex(index)} style={index === selectedIndex ? {'borderBottom': '1px #333 solid'} : null}>
+					style={index === selectedIndex ? {'borderBottom': '1px #333 solid'} : null}>
 						<li>{title}</li>
 					</Link>
 				)}
