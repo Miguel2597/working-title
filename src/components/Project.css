@@ -1,0 +1,47 @@
+.project {
+    margin-top: 15px;
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+}
+
+.project-title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.project-icon {
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+.project-p {
+    font-size: 14px;
+    padding-top: 5px;
+    line-height: 1.5;
+}
+
+.project-img {
+    display: flex;
+    width: 100%;
+    margin: 15px auto 10px;
+}
+
+.project-btn {
+    display: flex;
+    margin: 15px auto 0;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+}
+
+.project-btn:focus {
+    outline: none;
+}
+
+.project-btn:hover{
+    font-size: 22px;
+}
