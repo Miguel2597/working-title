@@ -22,7 +22,7 @@ export default function Navbar() {
 				)}
 			</ul>
 
-			<div class='nav-burger' onClick={() => setBurgerExpanded(!burgerExpanded)}>
+			<div className='nav-burger' onClick={() => setBurgerExpanded(!burgerExpanded)}>
 				<div className='nav-burger-line'></div>
 				<div className='nav-burger-line'></div>
 				<div className='nav-burger-line'></div>

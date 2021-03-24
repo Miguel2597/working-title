@@ -1,3 +1,5 @@
+import gif from '../assets/twitch-clip-vod-sync.gif'
+
 const projectList = [
     {
         title: 'Twitch clip/VOD sync',
@@ -7,7 +9,7 @@ const projectList = [
         full_desc: 
         <div>
             <p className='project-p'>This extension can be used anywhere as long as you provide a valid clip/VOD URL. If you have a clip/VOD open in your current tab, the extension will automatically fill in the URL field for you.</p>
-            <img className='project-img' src='https://github.com/Miguel2597/twitch-clip-vod-sync/raw/main/chrome-extension/images/extension.gif' alt='extension gif'></img>
+            <img className='project-img' src={gif} alt='twitch-clip-vod-sync.gif'></img>
             <p className='project-p' style={{fontWeight: 'bold'}}>Valid clip URLs examples</p>
             <p className='project-p'>https://clips.twitch.tv/ObliqueOddCougarFunRun-GF9H5eK6aSyFbT8U</p>
             <p className='project-p'>clips.twitch.tv/ObliqueOddCougarFunRun-GF9H5eK6aSyFbT8U</p>
