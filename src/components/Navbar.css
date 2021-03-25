@@ -32,6 +32,10 @@
     padding: 2px;
 }
 
+.link:hover {
+    border-bottom: 1px #333 solid;
+}
+
 .nav-burger {
     display: none;
     cursor: pointer;

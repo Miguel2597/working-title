@@ -15,6 +15,12 @@
     margin: 40px auto;
 }
 
+.title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
 @media (max-width: 900px) {
     .content {
         width: 95%;

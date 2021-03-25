@@ -11,7 +11,7 @@ export default function Home({ title, index }) {
 
     return (
         <div>
-            {title}
+            <h1 className='title'>{title}</h1>
         </div>
     )
 }

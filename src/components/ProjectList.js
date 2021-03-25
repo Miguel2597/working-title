@@ -5,6 +5,7 @@ const projectList = [
         title: 'Twitch clip/VOD sync',
         site: 'https://chrome.google.com/webstore/detail/twitch-clipvod-sync/iolfhmhipbbpacmhhffkjelgkadnffid',
         github: 'https://github.com/Miguel2597/twitch-clip-vod-sync',
+        technologies: ['JavaScript', 'HTML', 'CSS', 'Node.js', 'Express.js', 'MongoDB'],
         desc: 'Chrome extension that synchronises a Twitch clip/VOD to another streamers VOD if that streamer was live at the exact moment in time of the clip/VOD.',
         full_desc: 
         <div>

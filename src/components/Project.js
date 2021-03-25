@@ -8,6 +8,7 @@ export default function Project({ project }) {
 
     return (
         <div className='project'>
+
             <div className='project-header'>
                 <h2 className='project-title'>{project.title}</h2>
                 <a className='project-icon' href={project.site} target="_blank" rel="noopener noreferrer">
@@ -17,6 +18,11 @@ export default function Project({ project }) {
                     <i className="fa fa-github" aria-hidden="true"></i>
                 </a>
             </div>
+
+            <div className='project-technologies'>
+                {project.technologies.map((t,i) => <div key={i} className='project-technology'>{t}</div>)}
+            </div>
+
             <p className='project-p'>{project.desc}</p>
 
             {expanded && project.full_desc}
