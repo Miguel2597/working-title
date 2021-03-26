@@ -10,20 +10,26 @@
     color: #333;
 }
 
+p {
+    font-size: 14px;
+    margin-top: 5px;
+    line-height: 1.5; 
+}
+
 .content {
     max-width: 900px;
-    margin: 40px auto;
+    margin: 40px auto 0;
 }
 
 .title {
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 @media (max-width: 900px) {
     .content {
         width: 95%;
-        margin: 40px 0 0 2.5%;
+        margin: 40px 2.5% 0;
     }
 }

@@ -9,19 +9,29 @@ const projectList = [
         desc: 'Chrome extension that synchronises a Twitch clip/VOD to another streamers VOD if that streamer was live at the exact moment in time of the clip/VOD.',
         full_desc: 
         <div>
-            <p className='project-p'>This extension can be used anywhere as long as you provide a valid clip/VOD URL. If you have a clip/VOD open in your current tab, the extension will automatically fill in the URL field for you.</p>
+            <p>This extension can be used anywhere as long as you provide a valid clip/VOD URL. If you have a clip/VOD open in your current tab, the extension will automatically fill in the URL field for you.</p>
             <img className='project-img' src={gif} alt='twitch-clip-vod-sync.gif'></img>
-            <p className='project-p' style={{fontWeight: 'bold'}}>Valid clip URLs examples</p>
-            <p className='project-p'>https://clips.twitch.tv/ObliqueOddCougarFunRun-GF9H5eK6aSyFbT8U</p>
-            <p className='project-p'>clips.twitch.tv/ObliqueOddCougarFunRun-GF9H5eK6aSyFbT8U</p>
-            <p className='project-p'>twitch.tv/lirik/clip/EphemeralMuddyPanPeteZarollTie-D-ojcu-Nk40osS0S</p>
-            <p className='project-p' style={{fontWeight: 'bold'}}>Valid VOD URLs examples</p>
-            <p className='project-p'>VOD URLs must always include a timestamp with hours, minutes and seconds, even if they are 0.</p>
-            <p className='project-p'>https://www.twitch.tv/videos/934247376?t=10h29m46s</p>
-            <p className='project-p'>www.twitch.tv/videos/934247376?t=0h15m12s</p>
-            <p className='project-p'>twitch.tv/videos/934247376?t=1h0m10s</p>
+            <p style={{fontWeight: 'bold'}}>Valid clip URLs examples</p>
+            <p>https://clips.twitch.tv/ObliqueOddCougarFunRun-GF9H5eK6aSyFbT8U</p>
+            <p>clips.twitch.tv/ObliqueOddCougarFunRun-GF9H5eK6aSyFbT8U</p>
+            <p>twitch.tv/lirik/clip/EphemeralMuddyPanPeteZarollTie-D-ojcu-Nk40osS0S</p>
+            <p style={{fontWeight: 'bold'}}>Valid VOD URLs examples</p>
+            <p>VOD URLs must always include a timestamp with hours, minutes and seconds, even if they are 0.</p>
+            <p>https://www.twitch.tv/videos/934247376?t=10h29m46s</p>
+            <p>www.twitch.tv/videos/934247376?t=0h15m12s</p>
+            <p>twitch.tv/videos/934247376?t=1h0m10s</p>
         </div>
-    }
+    },
+    {
+        title: 'Praxis Market Drift',
+        site: '',
+        github: '',
+        technologies: ['JavaScript', 'HTML', 'CSS', 'React', 'Python', 'Flask', 'MySQL'],
+        desc: 'Master thesis',
+        full_desc: 
+        <div>
+        </div>
+    },
 ]
 
 export default projectList

@@ -10,12 +10,17 @@
 .project-title {
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 .project-icon {
-    font-size: 18px;
+    font-size: 20px;
     margin-left: 15px;
+    border-bottom: 1px rgb(228, 218, 218) solid;
+}
+
+.project-icon:hover {
+    border-bottom: 1px #333 solid;
 }
 
 .project-technologies {
@@ -32,12 +37,6 @@
     border: 2px #333 solid;
 }
 
-.project-p {
-    font-size: 14px;
-    margin-top: 5px;
-    line-height: 1.5;
-}
-
 .project-img {
     display: flex;
     width: 100%;
@@ -50,6 +49,7 @@
     cursor: pointer;
     border: none;
     font-size: 18px;
+    border-bottom: 1px rgb(228, 218, 218) solid;
 }
 
 .project-btn:focus {
@@ -57,5 +57,5 @@
 }
 
 .project-btn:hover{
-    font-size: 22px;
+    border-bottom: 1px #333 solid;
 }

@@ -11,19 +11,19 @@ export default function Project({ project }) {
 
             <div className='project-header'>
                 <h2 className='project-title'>{project.title}</h2>
-                <a className='project-icon' href={project.site} target="_blank" rel="noopener noreferrer">
+                {project.site && <a className='project-icon' href={project.site} target="_blank" rel="noopener noreferrer">
                     <i className='fa fa-home' aria-hidden="true"></i>
-                </a>
-                <a className='project-icon' href={project.github} target="_blank" rel="noopener noreferrer">
+                </a>}
+                {project.github && <a className='project-icon' href={project.github} target="_blank" rel="noopener noreferrer">
                     <i className="fa fa-github" aria-hidden="true"></i>
-                </a>
+                </a>}
             </div>
 
             <div className='project-technologies'>
                 {project.technologies.map((t,i) => <div key={i} className='project-technology'>{t}</div>)}
             </div>
 
-            <p className='project-p'>{project.desc}</p>
+            <p>{project.desc}</p>
 
             {expanded && project.full_desc}
 
