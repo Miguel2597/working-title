@@ -15,7 +15,7 @@ export default function Navbar() {
 			<h1>Website</h1>
 			<ul className='nav-links' style={{display: burgerExpanded ? 'flex' : null}}>
 				{menuItems.map(({ title, path }, index) => 
-					<Link className='link' key={index} to={path} onClick={() => setBurgerExpanded(!burgerExpanded)}
+					<Link className='link' key={index} to={path} onClick={() => setBurgerExpanded(false)}
 					style={{borderBottom: index === selectedIndex && '1px #333 solid'}}>
 						<li>{title}</li>
 					</Link>

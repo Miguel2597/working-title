@@ -28,8 +28,8 @@ export default function Routes() {
     const location = useLocation()
 
     return (
-        <AnimatePresence exitBeforeEnter>
-            <Switch location={location} key={location.key}>
+        <AnimatePresence initial={false} exitBeforeEnter>
+            <Switch location={location} key={location.pathname}>
                 {menuItems.map(({ title, component: Component, path }, index) => 
                     <Route key={index} path={path} exact render={props => 
                         <motion.div initial='initial' animate='animate' exit='exit' variants={pageAnimation}>

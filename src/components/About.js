@@ -1,5 +1,6 @@
 import { useEffect, useContext } from 'react'
 import { IndexContext } from './IndexContext'
+import Icon from './Icon'
 import resume from '../assets/resume.pdf'
 
 import './About.css'
@@ -26,24 +27,16 @@ export default function About({ title, index }) {
                 <h3>Find me on</h3>
             </div>
             <div className='about-icons'>
-                <a className='about-icon' href={'https://github.com/Miguel2597'} target="_blank" rel="noopener noreferrer">
-                    <i className="fa fa-github" aria-hidden="true"></i>
-                </a>
-                <a className='about-icon' href={'https://linkedin.com/in/migueloliveira25'} target="_blank" rel="noopener noreferrer">
-                    <i className="fa fa-linkedin-square" aria-hidden="true"></i>
-                </a>
-                <a className='about-icon' href={'mailto:miguel_250597@hotmail.com'} target="_blank" rel="noopener noreferrer">
-                    <i className="fa fa-envelope" aria-hidden="true"></i>
-                </a>
+                <Icon className='about-icon' href='https://github.com/Miguel2597' iconName='fa fa-github'></Icon>
+                <Icon className='about-icon' href='https://linkedin.com/in/migueloliveira25' iconName='fa fa-linkedin-square'></Icon>
+                <Icon className='about-icon' href='mailto:miguel_250597@hotmail.com' iconName='fa fa-envelope'></Icon>
             </div>
 
             <div className='about-find-me'>
                 <h3>Check out my resume</h3>
             </div>
             <div className='about-icons'>
-                <a className='about-icon' href={resume} target="_blank" rel="noopener noreferrer">
-                    <i className="fa fa-file" aria-hidden="true"></i>
-                </a>
+                <Icon className='about-icon' href={resume} iconName='fa fa-file'></Icon>
             </div>
 
         </div>
