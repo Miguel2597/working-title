@@ -8,7 +8,6 @@ export default function Project({ project }) {
 
     return (
         <div className='project'>
-
             <div className='project-header'>
                 <h2 className='project-title'>{project.title}</h2>
                 {project.site && <a className='project-icon' href={project.site} target="_blank" rel="noopener noreferrer">
@@ -29,7 +28,7 @@ export default function Project({ project }) {
 
             <button className='project-btn' onClick={() => setExpanded(!expanded)}>
                 <i className={expanded ? "fa fa-chevron-up" : "fa fa-chevron-down"} aria-hidden="true"></i>
-            </button>
+            </button> 
         </div>
     )
 }

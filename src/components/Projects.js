@@ -12,7 +12,8 @@ export default function Projects({ title, index }) {
     }, [index, setSelectedIndex])
     
     return (
-        <div className="projects">
+        
+        <div className='projects'>
             <h1 className="title">{title}</h1>
             {projectList.map((project, index) => <Project key={index} project={project}></Project>)}
         </div>
