@@ -1,4 +1,6 @@
-import gif from '../assets/twitch-clip-vod-sync.gif'
+import image1 from '../assets/twitch-clip-vod-sync-1.jpg'
+import image2 from '../assets/twitch-clip-vod-sync-2.jpg'
+import image3 from '../assets/twitch-clip-vod-sync-3.jpg'
 
 const projectList = [
     {
@@ -7,10 +9,10 @@ const projectList = [
         github: 'https://github.com/Miguel2597/twitch-clip-vod-sync',
         technologies: ['JavaScript', 'HTML', 'CSS', 'Node.js', 'Express.js', 'MongoDB'],
         desc: 'Chrome extension that synchronises a Twitch clip/VOD to another streamers VOD if that streamer was live at the exact moment in time of the clip/VOD.',
+        images: [image1, image2, image3],
         full_desc: 
         <div>
             <p>This extension can be used anywhere as long as you provide a valid clip/VOD URL. If you have a clip/VOD open in your current tab, the extension will automatically fill in the URL field for you.</p>
-            <img className='project-img' src={gif} alt='twitch-clip-vod-sync.gif'></img>
             <p style={{fontWeight: 'bold'}}>Valid clip URLs examples</p>
             <p>https://clips.twitch.tv/ObliqueOddCougarFunRun-GF9H5eK6aSyFbT8U</p>
             <p>clips.twitch.tv/ObliqueOddCougarFunRun-GF9H5eK6aSyFbT8U</p>
@@ -28,6 +30,7 @@ const projectList = [
         github: '',
         technologies: ['JavaScript', 'HTML', 'CSS', 'React', 'Python', 'Flask', 'MySQL'],
         desc: 'Master thesis',
+        images: [],
         full_desc: 
         <div>
         </div>

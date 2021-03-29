@@ -33,7 +33,7 @@ export default function About({ title, index }) {
             </div>
 
             <div className='about-find-me'>
-                <h3>Check out my resume</h3>
+                <h3>Check out my Resume</h3>
             </div>
             <div className='about-icons'>
                 <Icon className='about-icon' href={resume} iconName='fa fa-file'></Icon>

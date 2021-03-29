@@ -9,6 +9,7 @@
     margin: 0 auto;
     padding: 40px 0 15px;
     border-bottom: 1px solid #333;
+    z-index: 1;
 }
 
 .navbar h1 {
