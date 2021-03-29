@@ -1,54 +1,19 @@
 import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import Icon from './Icon'
+import { fullDescVariants, imageVariants } from '../animations/Variants'
 
 import './Project.css'
 
-const fullDescAnimation = {
-    initial: {
-        opacity: 0,
-        y: -100
-    },
-    animate: {
-        opacity: 1,
-        y: 0,
-        transition: {
-            duration: 0.5
-        }
-    },
-    exit: {
-        opacity: 0,
-        y: -100,
-        transition: {
-            ease: 'easeInOut'
-        }
-    }
-}
-
-const imageAnimation = {
-    initial: direction => (
-      {
-        x: direction > 0 ? 1000 : -1000,
-        opacity: 0
-      }
-    ),
-    animate: {
-      x: 0,
-      opacity: 1,
-      transition: {
-          duration: 0.3
-      }
-    },
-    exit: direction => (
-      {
-        x: direction < 0 ? 1000 : -1000,
-        opacity: 0,
-        transition: {
-            ease: 'easeOut'
-        }
-      }
+const Button = ({ className, onClick, iconName }) => {
+    return (
+        <motion.button className={className} onClick={onClick}
+            whileHover={{ scale: 1.3 }} transition={{ duration: 0.3, ease: 'easeInOut'}}
+        >
+            <i className={iconName} aria-hidden="true"></i>
+        </motion.button> 
     )
-  };
+}
 
 export default function Project({ project }) {
 
@@ -85,35 +50,44 @@ export default function Project({ project }) {
 
             <p>{project.desc}</p>
 
-            <AnimatePresence exitBeforeEnter>
+            <AnimatePresence exitBeforeEnter initial={false}>
                 {expanded && 
-                <motion.div initial='initial' animate='animate' exit='exit' variants={fullDescAnimation}>
+                <motion.div initial='initial' animate='animate' exit='exit' variants={fullDescVariants}>
                     <div className='slideshow'>
                         <AnimatePresence exitBeforeEnter custom={direction} initial={false}>
-                            <motion.img className='image' src={project.images[imageIndex]} alt=''
-                                key={imageIndex} initial='initial' animate='animate' exit='exit' variants={imageAnimation} custom={direction}></motion.img>
+                            <motion.img 
+                                className='image' 
+                                src={project.images[imageIndex]} 
+                                alt=''
+                                key={imageIndex} 
+                                initial='initial' 
+                                animate='animate' 
+                                exit='exit' 
+                                variants={imageVariants} 
+                                custom={direction}
+                            ></motion.img>
                         </AnimatePresence>
-                        <motion.button className='prevBtn' onClick={() => previousIndex(-1)}
-                            whileHover={{ scale: 1.3 }} transition={{ duration: 0.3, ease: 'easeInOut'}}
-                        >
-                            <i className="fa fa-chevron-left" aria-hidden="true"></i>
-                        </motion.button>
-                        <motion.button className='nextBtn' onClick={() => nextIndex(1)}
-                            whileHover={{ scale: 1.3 }} transition={{ duration: 0.3, ease: 'easeInOut'}}
-                        >
-                            <i className="fa fa-chevron-right"></i>
-                        </motion.button>
+                        <Button
+                            className='prevBtn'
+                            onClick={() => previousIndex(-1)}
+                            iconName='fa fa-chevron-left'
+                        ></Button>
+                        <Button
+                            className='nextBtn'
+                            onClick={() => nextIndex(1)}
+                            iconName='fa fa-chevron-right'
+                        ></Button>
                     </div>
                     {project.full_desc}
                 </motion.div>
                 }
             </AnimatePresence>
 
-            <motion.button className='project-btn' onClick={() => setExpanded(!expanded)}
-                whileHover={{ scale: 1.3 }} transition={{ duration: 0.3, ease: 'easeInOut'}}
-            >
-                <i className={expanded ? "fa fa-chevron-up" : "fa fa-chevron-down"} aria-hidden="true"></i>
-            </motion.button> 
+            <Button 
+                className='project-btn' 
+                onClick={() => setExpanded(!expanded)} 
+                iconName={expanded ? "fa fa-chevron-up" : "fa fa-chevron-down"}
+            ></Button>
         </div>
     )
 }
