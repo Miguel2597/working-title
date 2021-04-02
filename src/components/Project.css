@@ -1,104 +1,100 @@
 .project-header {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .project-title {
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 20px;
 }
 
 .project-icon {
-    font-size: 20px;
-    margin-left: 15px;
-    border-bottom: 1px rgb(228, 218, 218) solid;
+  font-size: 20px;
+  margin-left: 15px;
+  border-bottom: 1px rgb(228, 218, 218) solid;
 }
 
 .project-icon:hover {
-    border-bottom: 1px #333 solid;
+  border-bottom: 1px #333 solid;
 }
 
 .project-technologies {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .project-technology {
-    margin-top: 10px;
-    margin-right: 15px;
-    padding: 4px;
-    font-size: 15px;
-    line-height: 1.5;
-    border: 2px #333 solid;
+  margin-top: 10px;
+  margin-right: 15px;
+  padding: 4px;
+  font-size: 15px;
+  line-height: 1.5;
+  border: 2px #333 solid;
 }
 
 .project-btn {
-    display: flex;
-    margin: 15px auto;
-    cursor: pointer;
-    border: none;
-    font-size: 18px;
-    border-bottom: 1px rgb(228, 218, 218) solid;
+  display: flex;
+  margin: 15px auto;
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+  border-bottom: 1px rgb(228, 218, 218) solid;
 }
 
 .project-btn:focus {
-    outline: none;
-}
-
-.project-btn:hover{
-    border-bottom: 1px #333 solid;
+  outline: none;
 }
 
 .slideshow {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    margin: 20px auto;
-    border-radius: 10px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 20px auto;
+  border-radius: 10px;
 }
 
 .image {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 .prevBtn, .nextBtn{
-    position: absolute;
-    top: 50%;
-    cursor: pointer;
-    border: none;
-    font-size: 10px;
-    border-bottom: 1px rgb(228, 218, 218) solid;
-    width: 25px;
-    height: 25px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  border: none;
+  font-size: 10px;
+  border-bottom: 1px rgb(228, 218, 218) solid;
+  width: 25px;
+  height: 25px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .prevBtn {
-    left: 1%;
+  left: 1%;
 }
 
 .nextBtn {
-    right: 1%;
+  right: 1%;
 }
 
 .prevBtn:focus, .nextBtn:focus {
-    outline: none;
+  outline: none;
 }
 
 @media (max-width: 700px) {
-    .prevBtn, .nextBtn {
-        font-size: 8px;
-        width: 18px;
-        height: 18px;
-        border-radius: 10px;  
-    }
+  .prevBtn, .nextBtn {
+    font-size: 8px;
+    width: 18px;
+    height: 18px;
+    border-radius: 10px;  
+  }
 }

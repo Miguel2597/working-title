@@ -5,17 +5,19 @@ import projectList from './ProjectList'
 
 export default function Projects({ title, index }) {
 
-    const { setSelectedIndex } = useContext(IndexContext)
+  const { setSelectedIndex } = useContext(IndexContext)
 
-    useEffect(() => {
-        setSelectedIndex(index)
-    }, [index, setSelectedIndex])
+  useEffect(() => {
+    setSelectedIndex(index)
+  }, [index, setSelectedIndex])
+  
+  return (
     
-    return (
-        
-        <div className='projects'>
-            <h1 className="title">{title}</h1>
-            {projectList.map((project, index) => <Project key={index} project={project}></Project>)}
-        </div>
-    )
+    <div className='projects'>
+      <h1 className="title">{title}</h1>
+      <ul>
+        {projectList.map((project, index) => <Project key={index} project={project}></Project>)}
+      </ul>
+    </div>
+  )
 }

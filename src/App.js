@@ -6,19 +6,19 @@ import Routes from './routes/Routes'
 
 export default function App() {
 
-	const [selectedIndex, setSelectedIndex] = useState(0)
+  const [selectedIndex, setSelectedIndex] = useState(0)
 
-	const providerValue = useMemo(() => ({ selectedIndex, setSelectedIndex }), [selectedIndex, setSelectedIndex])
+  const providerValue = useMemo(() => ({ selectedIndex, setSelectedIndex }), [selectedIndex, setSelectedIndex])
 
-	return (
-		<Router>
-			<IndexContext.Provider value={providerValue}>
-				<Navbar></Navbar>
-				<div className='content'>
-					<Routes></Routes>
-				</div>
-			</IndexContext.Provider>
-		</Router>
+  return (
+    <Router>
+      <IndexContext.Provider value={providerValue}>
+        <Navbar></Navbar>
+        <div className='content'>
+          <Routes></Routes>
+        </div>
+      </IndexContext.Provider>
+    </Router>
   )
 }
 
