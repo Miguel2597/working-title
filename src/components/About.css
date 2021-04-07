@@ -1,10 +1,11 @@
 .about-find-me {
   margin-top: 50px;
-  font-size: 18px;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
 .about-icons {

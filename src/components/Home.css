@@ -1,0 +1,23 @@
+.home {
+  display: flex;
+  height: calc(85vh - 167px);
+}
+
+.home-center {
+  margin: auto;
+  text-align: center;
+}
+
+.home-name {
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.home-role {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
